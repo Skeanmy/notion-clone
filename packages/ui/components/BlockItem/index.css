@@ -1,0 +1,45 @@
+.page-block-header {
+  width: 100%;
+  white-space: pre-wrap;
+  word-break: break-word;
+  caret-color: rgb(50, 48, 44);
+  padding-top: 3px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin: 0px;
+  color: rgb(50, 48, 44);
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 40px;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI Variable Display",
+    "Segoe UI",
+    Helvetica,
+    "Apple Color Emoji",
+    Arial,
+    sans-serif,
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  cursor: text;
+  display: flex;
+  align-items: center;
+}
+
+.page-block-children {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.notion-list-item {
+  width: 100%;
+}
+
+.list-content {
+  width: 100%;
+  line-height: 32px;
+}

@@ -1,0 +1,38 @@
+.menu-wrapper {
+  position: absolute;
+  background: #fff;
+  padding: 12px;
+  border: "1px solid #ccc";
+  border-radius: 10px;
+  z-index: 1000;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 14px 28px -6px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px, rgba(84, 72, 49, 0.08) 0px 0px 0px 1px
+}
+
+.menu-wrapper .menu-item {
+  padding: 0 8px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+}
+
+.menu-wrapper .menu-item:hover {
+  background-color: #f5f5f5
+}
+
+.menu-item .menu-item-icon {
+  height: 24px;
+  width: 24px;
+  font-size: 16px;
+  /* font-weight: bold; */
+  /* color: #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

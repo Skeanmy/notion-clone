@@ -1,0 +1,46 @@
+.notion-editor {
+  padding: 16px;
+  display: flex;
+}
+
+.notion-editor-timeline {
+  padding: 16px;
+  width: 320px;
+}
+
+[contenteditable]:empty:after {
+  content: attr(data-placeholder);
+}
+
+[contenteditable]:after {
+  -webkit-text-fill-color: rgba(70, 68, 64, 0.45);
+}
+
+[contenteditable]:focus {
+  outline: none;
+}
+
+.notion-editor-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.notion-section {
+  display: flex;
+  align-items: center;
+  /* padding: 8px; */
+  /* border: 1px solid #ddd; */
+  /* border-radius: 4px; */
+  background: #fff;
+}
+
+.drag-handle {
+  cursor: grab;
+  font-size: 16px;
+  user-select: none;
+}
+
+.notion-section:active .drag-handle {
+  cursor: grabbing;
+}
