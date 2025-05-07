@@ -105,7 +105,7 @@ const Block = forwardRef(
           moveBlock(item.id, blockId, isAbove ? "before" : "after");
         }
       },
-      hover(item, monitor) {
+      hover(_item, monitor) {
         if (!refNode.current) {
           return;
         }
@@ -210,14 +210,14 @@ const Block = forwardRef(
 const NotionDoc = forwardRef<
   HTMLDivElement,
   { docInfo: NotionDocType<BlockType> } & BlockEvent & {
-      contentEditable: boolean;
-      onDocClick: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
-      setDocInfo: React.Dispatch<React.SetStateAction<unknown>>;
-      hoveredBlock: {
-        blockId: string;
-        blockType: string;
-      };
-    }
+    contentEditable: boolean;
+    onDocClick: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
+    setDocInfo: React.Dispatch<React.SetStateAction<unknown>>;
+    hoveredBlock: {
+      blockId: string;
+      blockType: string;
+    };
+  }
 >((props, ref) => {
   const { docInfo, ...rest } = props;
 

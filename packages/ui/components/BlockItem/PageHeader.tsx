@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import Header from "./Header";
 import type { HeaderBaseBlockProps } from "../../types/BaseBlock";
 import notionComponentManager from "../../utils/compStore";

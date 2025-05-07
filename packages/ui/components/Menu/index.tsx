@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import { Popover } from 'antd'
 import "./index.css";
 import notionComponentManager from "../../utils/compStore";
